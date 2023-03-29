@@ -6,7 +6,7 @@ from distutils.util import strtobool
 def FizzBang():
     while True:
         try:
-            option = strtobool(input("\nHello! Would you like to play FizzBang? (y/n) "))
+            option = strtobool(input("\nHello! Would you like to play FizzBuzz? (y/n) "))
         except ValueError:
             print("\nSorry, I didn't understand!\nYou should reply with yes or no!\n")
             os.system("pause")
