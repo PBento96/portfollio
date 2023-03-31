@@ -9,11 +9,17 @@ What is FizzBuzz?
 
 +++++++++++++++++++ DONE ++++++++++++++++++++
 
+31/03/2023
+    - python version
+        - improved readability
+        - fixed exit after game end
+        - improved formatting
+    
 30/03/2023
     - python version complete
 
 ++++++++++++++++++ TO DO ++++++++++++++++++++
 
-- fix edge cases and formatting in python version
+- fix edge cases in python version
 - code a competitive version where you play against the computer
 - write it in other languages!
