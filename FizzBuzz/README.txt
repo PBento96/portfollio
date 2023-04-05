@@ -9,6 +9,10 @@ What is FizzBuzz?
 
 +++++++++++++++++++ DONE ++++++++++++++++++++
 
+05/04/2023
+    - python version
+        - added handling for negative numbers
+
 31/03/2023
     - python version
         - improved readability
@@ -16,10 +20,10 @@ What is FizzBuzz?
         - improved formatting
     
 30/03/2023
-    - python version complete
+    - python version 
+        - working version complete
 
 ++++++++++++++++++ TO DO ++++++++++++++++++++
 
-- fix edge cases in python version
 - code a competitive version where you play against the computer
 - write it in other languages!

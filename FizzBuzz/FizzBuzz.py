@@ -97,6 +97,10 @@ def get_int():
     while True:
         try:
             num = int(input())
+            if num < 0:
+                print("\nSorry, I can't play this game with negative numbers. Can you give me a positive one?")
+                num = get_int()
+                os.system('cls')
             print()
             return num
         except ValueError:
