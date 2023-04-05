@@ -12,6 +12,9 @@ What is FizzBuzz?
 05/04/2023
     - python version
         - added handling for negative numbers
+    
+    - c++
+        -started work on c++ version
 
 31/03/2023
     - python version
@@ -25,5 +28,6 @@ What is FizzBuzz?
 
 ++++++++++++++++++ TO DO ++++++++++++++++++++
 
+- finish rewriting in c++
 - code a competitive version where you play against the computer
 - write it in other languages!
