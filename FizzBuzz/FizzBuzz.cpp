@@ -2,7 +2,15 @@
 
 using namespace std;
 
-bool get_yn(string answer);
+struct AB
+{
+    int a;
+    int b;
+};
+
+bool getYN(string answer);
+void fizzbuzz();
+AB getAB();
 
 int main()
 {
@@ -11,9 +19,9 @@ int main()
     {
         cout << "Hello! Would you like to play FizzBuzz? (y/n) ";
         cin >> answer;
-        if (get_yn(answer) == true)
+        if (getYN(answer) == true)
         {
-
+            fizzbuzz();
         }
         else
         {
@@ -24,7 +32,7 @@ int main()
 }
 
 //validate yes or no replies
-bool get_yn(string answer)
+bool getYN(string answer)
 {
     while (true)
     {
@@ -43,4 +51,74 @@ bool get_yn(string answer)
             cin >> answer;
         }
     }
+}
+
+void fizzbuzz()
+{
+    cout << "Great! I love this game!" << endl << "First we need to set the range!" << endl << "We need two numbers, one for the start and one for the end." << endl << "Make sure you only insert integers (whole numbers) over 0!" << endl;    
+    AB range, fizzbuzz;
+    do
+    {
+        range = getAB();
+        if (range.a > range.b)
+        {
+            cout << "That doesn't seem right... the game can't end before it starts!" << endl << "Make sure you're writing a second number that is larger than the first" << endl;
+        }
+    } while (range.a > range.b);
+    cout << "Awsome!" << endl << "We will start with " << range.a << " and end with " << range.b << "!" << endl;
+    do
+    {
+        fizzbuzz = getAB();
+        if (fizzbuzz.a == fizzbuzz.b)
+        {
+            cout << "That doesn't seem right... we cant use the same number twice!" << endl << "Make sure you're writing a second number that is diferent than the first" << endl;
+        }
+    } while (fizzbuzz.a == fizzbuzz.b);
+    cout << "Great! We're gonna replace multiples of " << fizzbuzz.a << "with the word fizz and multiples of " << fizzbuzz.b << " with the word buzz!" << endl << "Multiples of both will be replaced with FizzBuzz!" << endl;
+    for (int i = range.a; i <= range.b; i++)
+    {
+        if (i % fizzbuzz.a == 0 || i % fizzbuzz.b == 0)
+        {
+            if (i % fizzbuzz.a == 0 && i % fizzbuzz.b == 0)
+            {
+                cout << "FizzBuzz!" << endl;
+            }
+            else if (i % fizzbuzz.a == 0 && i % fizzbuzz.b != 0)
+            {
+                cout << "Fizz!" << endl;
+            }
+            else if (i % fizzbuzz.a != 0 && i % fizzbuzz.b == 0)
+            {
+                cout << "Buzz!" << endl;
+            }
+        }
+        else
+        {
+            cout << i << endl;
+        }
+    }
+}
+
+AB getAB()
+{
+    AB pair;
+    do
+    {
+        cout << "What should the first number be? ";
+        cin >> pair.a;
+        if (pair.a < 1)
+        {
+            cout << "Sorry, it has to be an integer over 0!" << endl;
+        }
+    } while (pair.a < 1);
+    do
+    {
+        cout << "What should the second number be? ";
+        cin >> pair.b;
+        if (pair.b < 1)
+        {
+            cout << "Sorry, it has to be an integer over 0!" << endl;
+        }
+    } while (pair.b < 1);
+    return pair;
 }

@@ -9,25 +9,29 @@ What is FizzBuzz?
 
 +++++++++++++++++++ DONE ++++++++++++++++++++
 
+13/04/2023
+    - c++
+        - first working version complete
+
 05/04/2023
-    - python version
+    - python
         - added handling for negative numbers
     
     - c++
         -started work on c++ version
 
 31/03/2023
-    - python version
+    - python 
         - improved readability
         - fixed exit after game end
         - improved formatting
     
 30/03/2023
-    - python version 
-        - working version complete
+    - python  
+        - first working version complete
 
 ++++++++++++++++++ TO DO ++++++++++++++++++++
 
-- finish rewriting in c++
+- polish c++ version
 - code a competitive version where you play against the computer
-- write it in other languages!
+- write it in more languages!
